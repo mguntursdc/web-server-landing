@@ -2,8 +2,6 @@
 
 sudo apt-get update
 
-sudo su
-cd
 git clone https://github.com/sdcilsy/landing-page
 
 systemctl status nginx | grep -E "*running"
