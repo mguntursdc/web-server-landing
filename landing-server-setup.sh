@@ -11,8 +11,8 @@ if [ $? -eq 0 ]; then
 else
         echo "NGINX belum terinstall"
         sudo apt-get install -y nginx
+        rm /var/www/html/index.nginx-debian.html
 fi
 
-rm /var/www/html/index.nginx-debian.html
 sudo mv landing-page/* /var/www/html/
 
