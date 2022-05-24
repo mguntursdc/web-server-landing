@@ -1,8 +1,6 @@
 #!/bin/bash
 
-sudo apt-get update
-
-git clone https://github.com/sdcilsy/landing-page
+sudo apt-get update && cd && git clone https://github.com/sdcilsy/landing-page
 
 systemctl status nginx | grep -E "*running"
 
